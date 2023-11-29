@@ -45,11 +45,11 @@ module.exports = dreaded = async (client, m, chatUpdate, store) => {
 const Heroku = require("heroku-client");  
  const appname = process.env.APP_NAME || '';
  const herokuapi = process.env.HEROKU_API;
-const gptdm = process.env.GPT_INBOX || 'TRUE';
+const gptdm = process.env.GPT_INBOX || 'FALSE';
     const cmd = body.startsWith(prefix);
 //const autobio = process.env.AUTOBIO || 'TRUE';
-const botname = process.env.BOTNAME || 'dreaded BOT';
-const antibot = process.env.ANTIBOT || 'TRUE';
+const botname = process.env.BOTNAME || 'dreaded malibu BOT';
+const antibot = process.env.ANTIBOT || 'FALSE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
@@ -80,16 +80,16 @@ const antibot = process.env.ANTIBOT || 'TRUE';
     };
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
-    const author = process.env.STICKER_AUTHOR || 'fortunatus';
-const maindev = '254114018035';
+    const author = process.env.STICKER_AUTHOR || '𝐌𝐀𝐋𝐈𝐁𝐔';
+const maindev = '62856557114003';
 const maindev2 = maindev.split(",");
 
-    const packname = process.env.STICKER_PACKNAME || 'dreaded';
-const dev = process.env.DEV || '254114018035'
+    const packname = process.env.STICKER_PACKNAME || '𝐃𝐑𝐄𝐀𝐃𝐄𝐃';
+const dev = process.env.DEV || '62856557114003'
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
-    const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
+    const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
    const bad = process.env.BAD_WORD || 'fuck';
     const autoread = process.env.AUTOREAD || 'TRUE';
     const badword = bad.split(",");
@@ -454,7 +454,14 @@ let cap = `┌───═[ ${botname} ]═──▸
 ▯ Hello ${m.pushName}
 This is a simple WhatsApp Bot.
 Below is my command list.
-▯
+▯___________________
+▕╮╭┻┻╮╭┻┻╮╭▕╮╲
+▕╯┃╭╮┃┃╭╮┃╰▕╯╭▏
+▕╭┻┻┻┛┗┻┻┛ ▕ ╰▏
+▕╰━━━┓┈┈┈╭╮▕╭╮▏
+▕╭╮╰┳┳┳┳╯╰╯▕╰╯▏
+▕╰╯┈┗┛┗┛┈╭╮▕╮┈
+│█║▌║▌║║▌║▌║█│▌
 ▯
 └───────────────···▸
 ┌───〈 𝗢𝗪𝗡𝗘𝗥 〉───◆
@@ -554,7 +561,7 @@ client.sendMessage(m.chat, {
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: `DREADED BOT`,
+                                title: `DREADED MALIBU BOT`,
                                 body: `A simple WhatsApp bot.`,
                                 thumbnail: fs.readFileSync('./dreaded.jpg'),
                                 sourceUrl: `https://github.com/Fortunatusmokaya/DREADED-GPT-AI`,
