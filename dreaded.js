@@ -1,4 +1,4 @@
-
+gun
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require("@whiskeysockets/baileys");
 const fs = require("fs");
 const util = require("util");
@@ -81,7 +81,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
     const author = process.env.STICKER_AUTHOR || '𝐌𝐀𝐋𝐈𝐁𝐔';
-const maindev = '62856557114003';
+const maindev = '254114018035';
 const maindev2 = maindev.split(",");
 
     const packname = process.env.STICKER_PACKNAME || '𝐃𝐑𝐄𝐀𝐃𝐄𝐃';
